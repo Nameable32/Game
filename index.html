@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry Pirate Adventure</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    #ui {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 15px;
+      margin: 5px;
+      background-color: gray;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:active {
+      background-color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="ui">
+    <button onclick="move('up')">Up</button>
+    <button onclick="move('left')">Left</button>
+    <button onclick="move('down')">Down</button>
+    <button onclick="move('right')">Right</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
